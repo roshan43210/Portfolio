@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section id="projects" class="projects-section">
+
+  <h2>Featured Project</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+   <div class="project-card" onclick="openProject('voting')">
+      <h3>Blockchain Voting System</h3>
+
+      <p>
+        A secure and transparent voting system built using blockchain technology 
+        to ensure decentralization, immutability, and trust in elections.
+      </p>
+
+      <div class="tech">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg">
+        <span>Solidity (Decentralized)</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card" onclick="openProject('weather')">
+      <h3>Weather App</h3>
+
+      <p>
+        A real-time weather application that fetches live weather data 
+        using external APIs and displays dynamic updates.
+      </p>
+
+      <div class="tech">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+        <span>JavaScript (API Integration)</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card" onclick="openProject('testing')">
+      <h3>Manual Testing Web App</h3>
+
+      <p>
+        A web-based tool that helps generate test plans, test cases, 
+        and bug reports automatically for QA engineers.
+      </p>
+
+      <div class="tech">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg">
+        <span>Selenium (Automation)</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card" onclick="openProject('voting')">
+      <h3>Portfolio Website</h3>
+
+      <p>
+        A modern personal portfolio website showcasing skills, projects, 
+        and experience with animations and responsive design.
+      </p>
+
+      <div class="tech">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+        <span>JavaScript (Frontend)</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+
+    <div id="modalImages"></div>
+
+    <a id="githubLink" target="_blank">
+      <button>View GitHub</button>
+    </a>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
