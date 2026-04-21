@@ -159,14 +159,14 @@ function openProject(project) {
       title: "Weather App",
       desc: "Real-time weather app using API integration.",
       github: "https://github.com/roshan43210/Advanced_Weather_App",
-      images: ["images/weather1.png"]
+      images: ["images/weather 1.png"]
     },
 
     testing: {
       title: "Manual Testing Tool",
       desc: "Generate test cases and bug reports automatically.",
       github: "https://github.com/roshan43210/Manual-Tester-DOC-Generator-System",
-      images: ["images/test1.png"]
+      images: ["images/manual 1.png"]
     }
     
   };
