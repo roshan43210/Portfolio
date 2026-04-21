@@ -1,10 +1,10 @@
-// ========== LOADER ==========
+//  LOADER 
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   if (loader) loader.style.display = "none";
 });
 
-// ========== DARK MODE (SAVE) ==========
+// DARK MODE 
 function toggleMode() {
   document.body.classList.toggle("light");
   localStorage.setItem("theme",
@@ -18,7 +18,7 @@ window.onload = () => {
   }
 };
 
-// ========== TYPEWRITER ==========
+//TYPEWRITER 
 const text = ["QA Engineer", "Developer", "Blockchain Explorer"];
 let i = 0, j = 0;
 
@@ -39,20 +39,9 @@ function type() {
 }
 type();
 
-/*========== SCROLL ANIMATION ==========
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
 
-document.querySelectorAll(".card").forEach(card => {
-  observer.observe(card);
-}); */
 
-// ========== ACTIVE NAV ==========
+//  ACTIVE NAV 
 const links = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
@@ -70,7 +59,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// ========== MOBILE MENU ==========
+// MOBILE MENU
 function toggleMenu() {
   document.querySelector("nav").classList.toggle("show");
 }
@@ -169,14 +158,14 @@ function openProject(project) {
     weather: {
       title: "Weather App",
       desc: "Real-time weather app using API integration.",
-      github: "https://github.com/yourusername/weather",
+      github: "https://github.com/roshan43210/Advanced_Weather_App",
       images: ["images/weather1.png"]
     },
 
     testing: {
       title: "Manual Testing Tool",
       desc: "Generate test cases and bug reports automatically.",
-      github: "https://github.com/yourusername/testing",
+      github: "https://github.com/roshan43210/Manual-Tester-DOC-Generator-System",
       images: ["images/test1.png"]
     }
     
@@ -184,7 +173,7 @@ function openProject(project) {
 
   const projectData = data[project];
 
-  // 🧠 SAFETY CHECK
+  //  SAFETY CHECK
   if (!projectData) {
     console.error("Project not found:", project);
     return;
